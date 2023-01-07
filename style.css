@@ -70,6 +70,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+  /* this will hide anything that displays outside of its zone ; */
   overflow: hidden;
 }
 
