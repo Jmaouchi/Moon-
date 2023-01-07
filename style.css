@@ -23,6 +23,8 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;  
+  /* this z-index here will alow us to hover over the ul section; */
+  z-index: 10000;
 }
 
 header .logo{
@@ -50,14 +52,14 @@ header ul li a{
   text-decoration: none;
   padding: 6px 15px;
   color: white;
+  cursor: pointer;
 }
 
 
-header ul li a:hover{
+header ul li a:hover, header ul li a.active{
   background-color: white;
   color: rgb(34, 32, 32);
 }
-
 
 
 section{
@@ -68,6 +70,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 section::before{
@@ -128,7 +131,6 @@ section img#mountains_front{
   position: relative;
   padding: 100px;
   background: rgb(36, 36, 36);
-  z-index: 100;
 }
 
 .sec h2{
