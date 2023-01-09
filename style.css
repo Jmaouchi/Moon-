@@ -99,11 +99,16 @@ section img{
 
 section img#moon{
   /* this will hide the darkness of the moon */
-  mix-blend-mode: screen;
+  mix-blend-mode:exclusion;
 }
 
 section img#mountains_front{
+  /* this will hide the text behid the mountains */
   z-index: 10;
+}
+
+section img#mountains_behind{
+  mix-blend-mode:difference; 
 }
 
 #text{
