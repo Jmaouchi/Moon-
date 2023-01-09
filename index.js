@@ -16,6 +16,7 @@ window.addEventListener('scroll', function(){
   mountains_front.style.top= value * 0 + 'px';
   text.style.marginRight = value * 4 + 'px';
   text.style.marginTop = value * 1.5 + 'px';
+  text.textContent = "Let's Explore";
   btn.style.marginTop = value * 1.5 + 'px';
   header.style.top = value * 0.5+ 'px';
 });
