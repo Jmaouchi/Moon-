@@ -85,7 +85,7 @@ section::before{
 }
 
 
-section img{
+section .image-absolute{
   position: absolute;
   top: 0;
   left: 0;
@@ -94,6 +94,15 @@ section img{
   object-fit: cover;
   /* this will make change the mose hover event */
   pointer-events: none;
+}
+
+.loup{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  mix-blend-mode:multiply;
+  top: 0;
 }
 
 
@@ -108,7 +117,9 @@ section img#mountains_behind{
 
 section img#mountains_front{
   z-index: 10;
+  mix-blend-mode:luminosity;
 }
+
 
 #text{
   position: absolute;
